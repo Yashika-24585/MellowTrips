@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Rajasthan",
+        "Idealmonthtovisit": "Oct-Mar",
+        "CurrentTemperature": "41 degrees"
+    
+
+    },
+    {
+     "name": "Goa",
+     "Idealmonthtovisit": "april-June",
+     "CurrentTemperature": "33 degrees"
+      
+ },
+ {
+     "name": "Maharashtra",
+     "Idealmonthtovisit": "Nov- Feb",
+     "CurrentTemperature": "23 degrees"
+     
+ },
+  {
+     "name": "Gujarat",
+     "Idealmonthtovisit": "Sep-Dec",
+     "CurrentTemperature": "25 degrees"
+  }
+]

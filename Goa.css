@@ -1,0 +1,575 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html{
+    font-family: 'Itim', cursive;
+    /* font-family: 'Nunito', sans-serif; */
+}
+#header_top{
+    width:100%;
+    background-color:#79BEB3;
+    display:flex;
+    color:white;
+    height:5vh;
+}
+.email_phone{
+    display:flex;
+    position:relative;
+    top:8px;
+    margin-left:190px;
+}
+.email_phone i{
+    position:relative;
+    top:2px;
+    padding-right : 10px;
+    margin-left:20px;
+   }
+#header_top button{
+    color:#79BEB3;
+    background-color:rgb(246, 241, 241) ;
+    opacity : 0.9;
+    border-radius:3px;
+    padding:2px;
+    width:60px;
+    height:3.5vh;
+    border : #68caba;
+     margin-right : 20px;
+     margin-top : 2px;
+
+     font-size:15px;
+
+}
+#login{
+    position: absolute;
+    right:170px;
+    top: 4px;
+}
+
+#navigationmenu{
+    width : 100%;
+    height : 13vh;
+    display: inline-flex;
+    /* position: fixed;
+    background-color: white; */
+}
+#navigationmenu img{
+     height : 10vh;
+     margin-top : 10px;
+}
+#navigationmenu h4{
+    font-size : 20px;
+    margin-top : 30px;
+    margin-left : 10px;
+    color:rgb(163, 193, 204);
+}
+#navigationmenu #menubar{
+    width:40%;
+    height : 90%;
+    /* border:2px solid blue; */
+    margin-left: 200px;
+    
+}
+
+ 
+#navigationmenu #menubar ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    cursor: pointer;
+    
+}
+#navigationmenu #menubar ul li{
+   margin-top: 5%; 
+}
+#navigationmenu #search{
+    width : 300px;
+    height: 40px;
+    border-radius:10px;
+    border : 2px solid black;
+    margin-top: 20px;
+    display : flex;
+    margin-right:10vh;
+    margin-left: 70px;
+    font-weight: bold;
+    cursor : pointer;
+}
+#search i{
+    list-style:none;
+    margin-top:11px;
+    margin-left:7px;
+}
+#navigationmenu input{
+    height : 30px;
+    border-radius:10px;
+    padding-left:6px;
+    border : 0.5px solid white;
+    margin-top: 3px;
+}
+#dropdown,#dropdown1{
+    width : 100%;
+    height : 70vh;
+    position:absolute;
+    left:60px;
+    /* border : 2px solid green; */
+    /* may be remove */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    display : none;
+    background-color: #f0f7f6;
+}
+#navigationmenu #menubar ul li:hover{
+    border-bottom: 2px solid #74BEB3;
+   
+}
+#dropdown ul , #dropdown1 ul{
+    width : 20%;
+    height : 100%;
+    /* border : 2px solid blue; */
+    font-size: 20px;
+    padding-top: 30px;
+    padding-left: 60px;
+    color:#74BEB3;
+    font-weight: bolder;
+    cursor: pointer;
+    list-style: none;
+   
+  
+    
+   
+   
+}
+#dropdown ul .dlist , #dropdown1 ul .dlist{
+    /* border : 2px solid black; */
+    margin-top:10px;
+}
+
+#dropdown ul li , #dropdown1 ul li{
+    color:black;
+    font-weight: none;
+    font-size: medium;
+    cursor:pointer;
+    padding-top: 8px;
+}
+
+section {
+  padding: 3rem 9%;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.heading span {
+  color: #74BEB3;
+  font-size: 2rem;
+}
+
+.heading h1 {
+  font-size: 4rem;
+  color: #fff;
+}
+
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.7rem;
+  color: #74BEB3;
+  border: 0.2rem solid #74BEB3;
+  border-radius: 5rem;
+  cursor: pointer;
+  background: none;
+}
+
+.btn:hover {
+  background: #74BEB3;
+  color: #111;
+}
+
+
+.logo {
+  font-size: 2.5rem;
+  color: #fff;
+  font-weight: bolder;
+}
+
+.logo i {
+  color: #74BEB3;
+  padding-right: .5rem;
+}
+
+#menu-btn {
+  font-size: 2.5rem;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+.home {
+  margin: 0 auto;
+  margin-top: 1.5rem;
+  width: 100%;
+  border-radius: 1rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(71, 145, 155, 0.7)), to(rgba(91, 62, 62, 0.7))), url(https://www.treebo.com/blog/wp-content/uploads/2018/06/12-Ways-to-Experience-The-Goa-Nightlife--1024x683.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  min-height: 80vh;
+  display: flex;
+  padding-bottom: 5rem;
+}
+
+.home .content {
+  text-align: center;
+}
+
+.home .content span {
+  font-weight: bolder;
+  color: transparent;
+  -webkit-text-stroke: 0.1rem #fff;
+  font-size: 4vw;
+  display: block;
+}
+
+.home .content h3 {
+  font-size: 4.5vw;
+  color: #fff;
+}
+
+.home .content p {
+  max-width: 120rem;
+  margin: 1rem auto;
+  font-size: 1.4rem;
+  color: rgb(205, 201, 201);
+  line-height: 2;
+}
+
+.destination .heading{
+  font-size:40px;
+
+}
+a{
+    text-decoration: none;
+}
+.destination .box-container {
+  display : grid;
+  grid-template-columns: repeat(3,auto);
+  grid-template-rows: repeat(2,auto);
+  grid-gap:2rem;
+
+
+}
+
+.destination .box-container .box {
+  border-radius: 1rem;
+  overflow: hidden;
+  background: #060c0c98;
+  width:40vh;
+  height:50vh;
+  /* border:2px solid red; */
+}
+
+.destination .box-container .box:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.destination .box-container .box .image {
+  height: 15rem;
+  overflow: hidden;
+  width: 100%;
+}
+
+.destination .box-container .box .image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.destination .box-container .box .content {
+  padding: 2rem;
+  text-align: center;
+  background-color: #74BEB3;
+}
+
+.destination .box-container .box .content h3 {
+  font-size: 1.5rem;
+  margin-top : -20px;
+  color: white;
+}
+
+.destination .box-container .box .content p {
+  padding: 1rem 0;
+  font-size: 1.4rem;
+  color: rgb(37, 35, 35);
+  line-height: 1;
+  margin-top : -10px;
+}
+
+.destination .box-container .box .content a {
+  font-size: 1.7rem;
+  color: #74BEB3;
+}
+
+.destination .box-container .box .content a:hover i {
+  padding-left: 1rem;
+}
+
+.destination .box-container .box .content a i {
+  padding-right: .5rem;
+}
+
+
+.review {
+ 
+  display: flex;
+  
+  /* gap: 2rem; */
+}
+
+.review .content {
+  display : flex;
+  flex-direction: column;
+  margin-left : -100px;
+}
+
+.review .content span {
+  font-size: 2rem;
+  color: #74BEB3;
+}
+
+.review .content h3 {
+    width : 540px;
+  font-size: 2rem;
+  color: black;
+}
+
+.review .content p {
+  font-size: 1.4rem;
+  color: #aaa;
+  padding: 1rem 0;
+  line-height: 1.4;
+  width : 550px;
+}
+#blogs{
+    /* margin-top:15px;
+    margin-left: 55px;
+    display : flex; 
+    flex-direction: column;
+    justify-content: flex-start;
+    width : 100%; */
+    /* border : 2px solid red; */
+    width :850px;
+  }
+#blogs .addnote{
+    position:relative;
+ width : 100%;
+ height : 50vh;
+   
+}
+#blogs .addnote p{
+    
+    margin-top : 15px;
+    margin-left : 28px;
+    font-size: 19px;
+    color:black;
+  }
+  
+  .notes{
+    width : 90%;
+    height : 50px;
+    border : 1px solid rgb(224, 214, 214);
+    margin-top : 12px;
+    margin-left : 25px;
+  }
+  .notes textarea{
+    width : 100%;
+    height: 50px;
+    border:2px solid #74BEB3;
+  
+  }
+  .addnote button{
+    width : 120px;
+    height : 30px;
+    padding:2px;
+    background-color: rgb(19, 128, 149);
+    border-radius:5px;
+    font-size:18px;
+    color:white;
+    border : none;
+   margin-top : 20px;
+   margin-left:150px;
+   cursor:pointer;
+  
+  }
+  .Your_notes{
+    border-bottom:2px solid rgb(224, 214, 214);
+    border-top : none;
+    margin-top:0px;
+  }
+  
+   
+  
+  
+ #ccontainer {
+   width :100%;
+   height:60vh;
+   /* border:2px solid red; */
+   display : flex;
+
+}
+
+
+ #ccontainer .box {
+    width : 300px;
+    margin-left : 20px;
+    /* height : 200px; */
+  border-radius: 1rem;
+  padding: 2rem;
+  background: #060c0c98;
+  border: 0.2rem solid #111;
+  margin-top:80px;
+}
+
+ #ccontainer .box:hover {
+  border: 0.2rem solid #74BEB3;
+}
+
+ #ccontainer .box p {
+  font-size: 1.4rem;
+  padding-bottom: 1rem;
+  line-height: 2;
+  color: #aaa;
+}
+
+ #ccontainer .box .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
+#ccontainer p{
+    text-align: center;
+    font-size: 25px;
+    margin: auto;
+    color:grey;
+}
+
+ #ccontainer .box .user h3 {
+  font-size: 1.7rem;
+  color: #fff;
+}
+
+ #ccontainer .box .user span {
+  color: #aaa;
+  font-size: 1.5rem;
+}
+
+
+#footer{
+  width : 110%;
+  height : 50vh;
+  float : right;
+  background-color: #68caba;
+  margin-top : 80px;
+  display : flex;
+  margin-right : -150px;
+ 
+}
+#footer  #footerimg{
+  width : 20%;
+  height : 55vh;
+
+  margin-top : -50px;
+  margin-left: -50px;
+  background: url('https://youthincmag.com/wp-content/uploads/2018/09/Travel-And-Tourism-Sector.jpg') no-repeat center/cover;
+ 
+
+}
+#footer #footertext{
+  width : 70%;
+  height : 50vh;
+  
+  float : right;
+  margin-left : 25vh; 
+}
+#footer #footertext input{
+  width : 60%;
+  height : 4vh;
+  margin-top : 30px;
+  border-radius: 20px;
+  border: 1px solid white;
+  margin-left: 50px;
+}
+#footer #footertext input::placeholder{
+  margin-left: 8px;
+}
+#footer #footertext button{
+  width : 30%;
+  height : 5vh;
+  border-radius: 20px;
+  border: 1px solid rgb(131, 142, 144);
+  background-color: rgb(131, 142, 144);
+  margin-left : -150px;
+  cursor:pointer;
+}
+#footer #footertext #footerlinks{
+  width : 100%;
+  height : 22vh;
+  margin-top : 25px;
+  
+  display:flex;
+  justify-content: space-evenly;
+}
+#footer #footertext #footerlinks h5 {
+  color : white;
+  font-size: 20px;
+  cursor:pointer;
+  margin-left:-250px;
+}
+
+#footer #footertext #footerlinks h5 ul {
+  list-style: none;
+  margin-left : 0px;
+  font-size : 10px;
+  color :rgb(88, 120, 125);
+  font-size:14px;
+  cursor:pointer;
+  margin-top:5px;
+  line-height: 20px;
+}
+#footer #footertext hr{
+  margin-top: 40px;
+  border:1px solid rgb(131, 142, 144);
+  width : 80%;
+}
+
+#footer #footertext #footersocial
+{
+  display : flex;
+  justify-content: flex-end;
+  margin-right : 200px;
+}
+#footer #footertext #footersocial p{
+  margin-right : 220px;
+  color:white;
+  margin-top : 15px;
+}
+#footer #footertext #footersocial i{
+  margin-left : 40px;
+  font-size: 20px;
+  margin-top : 18px;
+  color:white;
+}

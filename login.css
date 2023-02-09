@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+*{
+    font-family: 'Itim', cursive;
+}
+.page{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#login img{
+    width : 120px;
+    height : 90px;
+   margin-left:260px;
+}
+
+.login_img{
+    width : 40%;
+    height : 70vh;
+    margin-top : 160px;
+    border-radius: 10px;
+    background: url('https://leverageedu.com/blog/wp-content/uploads/2019/10/Career-in-Travel-and-Tourism.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+#login {
+    width : 40%;
+    height : 70vh;
+    float : right;
+    margin-top : 160px;
+    border-radius: 10px;
+}
+
+#login h2 , p{
+    text-align: center;
+}
+
+#login p{
+    position: relative;
+    top : 14px;
+   margin-bottom : 60px; 
+   margin-left : 70px;
+}
+
+#login label{
+    margin-left: 80px;
+
+}
+
+#login input{
+    border-radius: 50px;
+    height : 4vh;
+    width : 70vh;
+    border-top : none;
+    border-right : none;
+    border-left : none;
+    border-bottom : 1px solid rgb(238, 230, 230);
+    margin-top : 4px;
+    margin-bottom : 18px;
+    margin-left: 70px;
+    margin-right: 4px;
+
+}
+#login a{
+    float : right;
+    margin-right : 20px;
+    text-decoration: none;
+    color : black;
+}
+#login #btn{
+    display: block;
+    width : 200px;
+    height : 30px;
+    border-radius: 40px;
+    background-color: #74BEB3;
+    border : none;
+    font-size: 16px;
+    color:white;
+    margin-top : 30px;
+    margin-right : 130px;
+}
+#login a #signin{
+    text-align: center;
+}
+

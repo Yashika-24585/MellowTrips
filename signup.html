@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href = "signup.css" rel = "stylesheet">
+    <title>MellowTrips</title>
+</head>
+<body>
+    <div id="login">
+        <div id="login_img">
+
+        </div>
+        <div id="signupform">
+            <img src = "wplogo.png">
+            <h5>MellowTrips</h5>
+            <p>Create an account</p>
+            <form id="myForm" action="#"  onsubmit=" return validation()">
+                <div class="formgroup">
+                    <label>UserName</label><br>
+                    <input type = "text" id = "username"><br>
+                    <span id = "usernameerror"></span>
+                </div>
+                <div class="formgroup">
+                    <label>Email</label><br>
+                    <input type = "text" id = "Email"><br>
+                    <span id = "emailerror"></span>
+                </div>
+                <div class="formgroup">
+                    <label>Password</label><br>
+                    <input type = "text" id = "Password"><br>
+                    <span id = "passworderror"></span>
+                </div>
+                <div class="formgroup">
+                    <label>Confirm Password</label><br>
+                    <input type = "text" id = "confirm_Password"><br>
+                    <span id = "cpassworderror"></span>
+                </div>
+                <a href = "Mellowtrips.html"><input type = "submit" value = "SignUp" id = "button"></a>
+            </form>
+            <p id = "or">or</p> 
+            <div id="google">
+                <img src="https://w0.peakpx.com/wallpaper/566/744/HD-wallpaper-new-google-g-color-logo.jpg">
+       <button  class="login-with-google-btn" >
+        Sign in with Google
+      </button>
+    </div>
+        </div>
+    </div>
+    <script type= "text/javascript">
+        var res = "true";
+    function validation(){
+          var username = document.getElementById('username').value;
+          var Email = document.getElementById('Email').value;
+           var Password = document.getElementById('Password').value;
+           var confirmPassword = document.getElementById('confirm_Password').value;
+
+           var usernamecheck = /^[A-Za-z ]{3,30}$/;
+            var passwordcheck = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,16}$/;
+            var emailcheck = /^[A-Za-z0-9]{3,}@[A-Za-z]{3,}[.]{1}[A-Za-z.]{2,6}$/;
+         if(usernamecheck.test(username)){
+             document.getElementById('usernameerror').innerHTML = " ";
+             
+       }
+        else{
+          document.getElementById('usernameerror').innerHTML = "**Username must be of at least 3 character long and max of 30 characters ";
+          res = "false"; 
+          return res;
+
+     }
+     if(emailcheck.test(Email)){
+        document.getElementById('emailerror').innerHTML = " ";
+      
+        
+       }
+     else{
+         document.getElementById('emailerror').innerHTML = "**Please enter a valid email"; 
+         res = "false"; 
+          return res;
+     }
+        if(passwordcheck.test(Password)){
+            document.getElementById('passworderror').innerHTML = " ";
+           
+      }
+       else{
+           document.getElementById('passworderror').innerHTML = "**Password must be of at least 8 characters and should contain a special character and a numerical value "; 
+           res = "false"; 
+          return res;
+       }
+
+      if(Password.match(confirmPassword)){
+            document.getElementById('cpassworderror').innerHTML = " ";
+           
+       }
+      else{
+         document.getElementById('cpassworderror').innerHTML = "**Does mot match with your password "; 
+         res = "false"; 
+          return res; 
+       }
+       
+     
+     }
+   
+    
+         let addbtn = document.getElementById('button');
+         addbtn.addEventListener("dblclick" , function(){
+            console.log("hoii");
+            //    window.location.href = "Mellowtrips.html";
+            window.open("Mellowtrips.html",'_blank');
+         })
+     
+        
+     
+    </script>
+</body>
+</html>

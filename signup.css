@@ -1,0 +1,158 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#login{
+    width : 80%;
+    height : 70vh;
+    margin: auto;
+    margin-top : 15vh;
+    /* border : 2px solid red; */
+    border-radius: 10px;
+    display: flex;
+   
+}
+#login #signupform img{
+    width : 120px;
+    height : 90px;
+   margin-left:150px;
+}
+#login_img{
+    width : 50%;
+    height : 70vh;
+    border-radius: 10px;
+    background: url('https://leverageedu.com/blog/wp-content/uploads/2019/10/Career-in-Travel-and-Tourism.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+#login #signupform{
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left : 90px;
+}
+#signupform h5{
+    text-align: center;
+    font-size : 15px;
+    font-weight: small;
+    margin-bottom : 15px;
+}
+#signupform p{
+    text-align: center;
+    margin-bottom:15px;
+}
+#login #signupform .formgroup{
+    width :60vh;
+    height:12vh;
+    /* border : 2px solid blue; */
+    margin-bottom : 10px;
+}
+#login #signupform .formgroup label{
+    font-size:17px;
+}
+#login #signupform .formgroup input{
+    height : 30px;
+    width : 70vh;
+    margin-top: 10px;
+    border-radius:10px;
+    border : 2px solid rgb(235, 237, 237);
+    border-top:none;
+    border-left: none;
+    border-right: none;
+}
+#login #signupform .formgroup #usernameerror ,#passworderror,#emailerror, #cpassworderror{
+    font-size:10px;
+     color : red;
+
+}
+#login #signupform #button{
+    width : 30%;
+    height : 30px;
+    font-size: 18px;
+    background-color: #74BEB3;
+    color: white;
+    margin-left : 170px;
+    position: relative;
+    top: -15px;
+    border-radius: 15px;
+    border : 1px solid #74BEB3;
+    
+}
+ #or{
+    margin-left: 60px;
+    text-align: center;
+    font-size: 20px;
+    position: relative;
+    /* top : 2px; */
+}
+#login #or:before{
+    content: "";
+    display: block;
+    width: 130px;
+    height: 2px;
+    background: black;
+    left: 20px;
+    top: 55%;
+    position: absolute;
+}
+#login #or:after{
+    content: "";
+    display: block;
+    width: 130px;
+    height: 2px;
+    background: black;
+    right: 20px;
+    top: 55%;
+    position: absolute;
+  }
+  #google{
+    width : 300px;
+    height : 60px;
+    margin-left: 80px;
+    border-radius: 50px;  
+    /* border : 2px solid green; */
+    display: flex;
+  }
+  #google img{
+      width : 10px;
+      height : 1px;
+      position: relative;
+      top : -20px;
+      left : -120px;
+      border-radius: 50px;
+  }
+  .login-with-google-btn{
+      width : 300px;
+      font-size: 15px;
+      height : 60px;
+      margin-left: -160px;
+      border-radius: 50px;
+      background-color: white;
+     
+      border : 2px solid white;
+
+  }
+/* .login-with-google-btn {
+    border: none;
+    border-radius: 6px;
+    width : 200px;
+    height : 60vh;
+    color: black;
+    font-size: 14px;
+    margin-top: 15px ;
+    margin-left: 150px ;
+    background: url('https://w0.peakpx.com/wallpaper/566/744/HD-wallpaper-new-google-g-color-logo.jpg');
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 30px;
+   
+    
+  } */
+  /* #login a{
+      text-decoration: none;
+      color:white;
+  } */

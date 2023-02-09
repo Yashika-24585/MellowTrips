@@ -1,0 +1,688 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html{
+    font-family: 'Itim', cursive;
+    /* font-family: 'Nunito', sans-serif; */
+}
+#header_top{
+    width:100%;
+    background-color:#79BEB3;
+    display:flex;
+    color:white;
+    height:5vh;
+}
+.email_phone{
+    display:flex;
+    position:relative;
+    top:8px;
+    margin-left:190px;
+}
+.email_phone i{
+    position:relative;
+    top:2px;
+    padding-right : 10px;
+    margin-left:20px;
+   }
+#header_top button{
+    color:#79BEB3;
+    background-color:rgb(246, 241, 241) ;
+    opacity : 0.9;
+    border-radius:3px;
+    padding:2px;
+    width:60px;
+    height:3.5vh;
+    border : #68caba;
+     margin-right : 20px;
+     margin-top : 2px;
+
+     font-size:15px;
+
+}
+#login{
+    position: absolute;
+    right:170px;
+    top: 4px;
+}
+
+#navigationmenu{
+    width : 100%;
+    height : 13vh;
+    display: inline-flex;
+    /* position: fixed;
+    background-color: white; */
+}
+#navigationmenu img{
+     height : 10vh;
+     margin-top : 10px;
+}
+#navigationmenu h4{
+    font-size : 20px;
+    margin-top : 30px;
+    margin-left : 10px;
+    color:rgb(163, 193, 204);
+}
+#navigationmenu #menubar{
+    width:40%;
+    height : 90%;
+    /* border:2px solid blue; */
+    margin-left: 200px;
+    
+}
+
+ 
+#navigationmenu #menubar ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    cursor: pointer;
+    
+}
+#navigationmenu #menubar ul li{
+   margin-top: 5%; 
+}
+#navigationmenu #search{
+    width : 300px;
+    height: 40px;
+    border-radius:10px;
+    border : 2px solid black;
+    margin-top: 20px;
+    display : flex;
+    margin-right:10vh;
+    margin-left: 70px;
+    font-weight: bold;
+    cursor : pointer;
+}
+#search i{
+    list-style:none;
+    margin-top:11px;
+    margin-left:7px;
+}
+#navigationmenu input{
+    height : 30px;
+    border-radius:10px;
+    padding-left:6px;
+    border : 0.5px solid white;
+    margin-top: 3px;
+}
+#dropdown,#dropdown1,#dropdown2{
+    width : 100%;
+    height : 70vh;
+    position:absolute;
+    left:60px;
+    /* border : 2px solid green; */
+    /* may be remove */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    display : none;
+    background-color: #f0f7f6;
+}
+#navigationmenu #menubar ul li:hover{
+    border-bottom: 2px solid #74BEB3;
+   
+}
+#dropdown ul , #dropdown1 ul,#dropdown2 ul{
+    width : 20%;
+    height : 100%;
+    /* border : 2px solid blue; */
+    font-size: 20px;
+    padding-top: 30px;
+    padding-left: 60px;
+    color:#74BEB3;
+    font-weight: bolder;
+    cursor: pointer;
+    list-style: none;
+   
+  
+    
+   
+   
+}
+#dropdown ul .dlist , #dropdown1 ul .dlist , #dropdown2 ul .dlist{
+    /* border : 2px solid black; */
+    margin-top:10px;
+}
+
+#dropdown ul li , #dropdown1 ul li,#dropdown2 ul li{
+    color:black;
+    font-weight: none;
+    font-size: medium;
+    cursor:pointer;
+    padding-top: 8px;
+}
+
+#welcome{
+    position: relative;
+    width:100%;
+    height:80vh;
+    z-index:-1;
+    background: url('https://www.tourmyindia.com/blog//wp-content/uploads/2014/09/Matheran-Western-India.jpg') no-repeat center/cover;
+    opacity : 0.9;
+    animation-name: slideshow;
+    animation-duration:25s;
+    animation-delay:2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+  #welcome::before{
+      content: ' ';
+      position:absolute;
+      top:0;
+      right:0;
+      left:0;
+      bottom:0;
+
+  
+  
+  }
+  @keyframes slideshow{
+      0%{
+          background:url('https://www.tourmyindia.com/blog//wp-content/uploads/2014/09/Matheran-Western-India.jpg') no-repeat center/cover ;
+      }
+      25%{
+          background:url('https://i0.wp.com/gypsywithadayjob.com/wp-content/uploads/2018/09/1.Hawa-Mahal-Jaipur-1-2.jpg?resize=750%2C673&ssl=1') no-repeat center/cover ;
+        
+      }
+      75%{
+          background:url('https://www.capertravelindia.com/images/west-india-3.jpg') no-repeat center/cover ;
+      }
+      100%{
+          background:url('https://www.llworldtour.com/wp-content/uploads/2013/12/LLRishikeshLandscape.jpg') no-repeat center/cover ;
+      }
+  }
+  #welcome .text{
+      position: relative;
+     width : 450px;
+     height : 10vh;
+     text-align: center;
+      top:30vh;
+      left : 65vh;
+      font-size: 40px;
+      color: white;
+      z-index:1;
+  }
+
+  #booking{
+    width:100%;
+    height : 50vh;
+    background-color: beige;
+    position : absolute;
+    top : 80vh;
+    display : flex;
+    flex-direction:  column;
+    /* justify-content: center; */
+    align-items: center;
+   }
+
+   #booking #bookinglogo{
+       width : 65%;
+       height : 7vh;
+       margin-top: 30px;
+       display: flex;
+       justify-content: space-between;
+
+   }
+   #booking #bookinglogo i:hover , #booking #logoname p:hover{
+       color : #74BEB3;
+   }
+   /* #booking #bookinglogo i:active , #booking #logoname p:active{
+    color : #414545;
+} */
+   #booking #logoname{
+       width : 75%;
+       height : 5vh;
+       display: flex;
+       justify-content: space-around;
+   }
+   #booking #logoname p{
+       width : 80px;
+       text-align: center;
+       margin-left : 8px;
+       font-size: 20px;
+   }
+   
+   #booking_details{
+    width : 90%;
+    height:30vh;
+    margin: auto;
+    border-radius : 10px;
+    background-color:white;
+    border : 3px solid  white;
+    box-shadow: 5px 5px  #79BEB3;
+}
+#booking_details #way input{
+    margin-top: 35px;
+    margin-left: 55px;
+}
+
+#booking_details #wayfield{
+    width : 100%;
+    height : 20vh;
+    margin-top : 10px;
+    /* border : 2px solid red; */
+    display:flex;
+    justify-content: space-evenly;
+}
+#booking #wayfield input{
+    margin-top: 60px;
+    /* margin-left: 45px; */
+    font-weight: bolder;
+    height:5vh;
+     border : 2px solid rgb(20, 28, 29);
+}
+#booking #wayfield input::placeholder{
+    text-align: center;
+}
+#booking #wayfield button{
+    /* margin-left : 50px; */
+    width : 170px;
+    height: 50px;
+    margin-top: 50px;
+    font-size : 20px;
+    padding: 10px 18px;
+    border-color: #79BEB3;
+    border-radius: 4px;
+    color:white;
+    background-color:  #79BEB3;
+    box-shadow:  #79BEB3;
+}
+#booking #wayfield button:hover{
+    opacity : 0.7;
+}
+#booking #wayfield #Activities{
+    width: 80%;
+}
+/* #booking #wayfield #Activities::placeholder{
+    text-align: center;
+} */
+input {
+    text-align: center;
+  }
+  ::-webkit-input-placeholder {
+    text-align: center;
+  }
+  :-moz-placeholder {
+    text-align: center;
+  }
+
+   
+ #destinations{
+     position:absolute;
+     top : 60vh;
+     width :100%;
+     height : 70vh;
+     /* border : 2px solid blue; */
+     text-align: center;
+     background: linear-gradient(#74BEB3 , white);
+ }
+ #destinations h4 {
+     margin-top : 20px;
+     font-size: 25px;
+     
+ }
+ #destinations p{
+    margin-top : 2px;
+    font-size: 15px;
+
+ }
+ #destinations #destname{
+     width : 80%;
+     height : 50vh;
+     /* border : 2px solid red; */
+     /* margin-top : 8vh; */
+     margin: 8vh auto 4px auto;
+     display : flex;
+    justify-content: space-evenly;
+    align-items: center;
+ }
+ 
+ #destname .states_front img{
+     width :100%;
+     height : 100%;
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+ }
+ #destname .states_front i{
+     position: absolute;
+     margin-top: 230px;
+     margin-left: -210px;
+     color:white;
+ }
+ #destname .states_front h4{
+    position: absolute;
+    margin-top: -50px;
+    margin-left: 8px;
+    color : white;
+ }
+
+ #destinations #destname .states{
+    width : 20%;
+    height : 40vh;
+    perspective: 1000px;
+ }
+ #destinations #destname .states_inner{
+    position:relative;
+    width:100%;
+    height:100%;
+    text-align:cenetr;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+ }
+ #destname .states_front{
+    width : 100%;
+    height : 100%;
+}
+#destinations #destname .states_back ,  .states_front{
+    position:absolute;
+    width : 100%;
+    height:100%;
+    backface-visibility: hidden;    
+}
+
+#destinations #destname .states:hover .states_inner{
+    transform : rotateY(180deg);
+}
+
+#destinations #destname .states_back{
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    text-align: center;
+    transform: rotateY(180deg);
+    background-color: white;
+}
+ 
+#toursandpackages{
+    position : relative;
+    top : 10vh;
+     width: 100%;
+     height : 80vh;
+     /* border : 2px solid red; */
+     /* background: url('https://static.zenithholidays.com/upload/img/bg-popular.jpg') no-repeat;
+     background-position: center;
+     background-size: cover;
+     background-attachment: fixed; */
+}
+
+#toursandpackages h5{
+    position : relative;
+    top : 30px;
+    left : 40px;
+    font-size: 30px;
+    display:inline;
+}
+#toursandpackages #arrow1  {
+   /* position: relative;
+   left : 2px;
+   top : 20vh;
+    */
+    position: relative;
+    left : -710px;
+    top:250px;
+    font-size: 50px;
+    color :#74BEB3;
+    /* color:rgb(184, 223, 247); */
+  /* left : 150px;
+  top:200px; */
+}
+#toursandpackages #arrow2{
+    position: relative;
+      right:-590px;
+      bottom:250px;
+    font-size: 50px;  
+    color :#74BEB3;
+}
+#toursandpackages i{
+    margin-right:10px;
+}
+#toursandpackages #toursoptions,#toursandpackages #toursoptions1{
+    width : 80%;
+    height : 50vh;
+    margin: 80px auto 20px auto;
+    /* border : 2px solid blue; */
+    display : flex;
+justify-content: space-evenly;
+
+}
+#toursandpackages #toursoptions1{
+    display: none;
+}
+
+#toursandpackages .options{
+   width : 25%;
+   height : 50vh;
+   border-radius: 4px;
+   /* border : 2px solid red; */
+
+}
+#toursandpackages .options .oname{
+    width : 100%;
+    height : 60%;
+   border-radius: 4px;
+
+    /* border : 2px solid green; */
+}
+#toursandpackages  .options .oname img{
+    width :100%;
+    height : 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+   border-radius: 4px;
+    
+}
+#toursandpackages  .options .otext{
+    text-align: left;
+    padding:12px;
+    height: 40%;
+    background-color: #74BEB3;
+    background-size: cover;
+   border-radius: 4px;
+   color:white;
+
+
+   
+}
+
+#weather{
+    position: relative;
+    margin-top: 20vh;
+    width : 100%;
+    height : 70vh;
+    background: linear-gradient(#74BEB3, white);
+    /* border: 2px solid red; */
+    opacity : 0.8;
+
+}
+#weather h4{
+    position: relative;
+  left : -70px;
+  top :170px;
+  font-size: 45px;
+  color :#3f7a70;
+  font-weight: bolder;
+}
+#weather p{
+    position: relative;
+    left : 220px;
+   top : 180px;
+    width : 20%;
+    font-size : 15px;
+    text-align: center;
+    color : rgb(89, 84, 84);
+}
+#weather button {
+    position: relative;
+    left : -100px;
+    top : 220px;
+    width : 10%;
+    height:4vh;
+    padding:2px;
+    background-color: #3f7a70;
+    color:white;
+    border-radius:4px;
+    border  : 2px solid #3f7a70;
+}
+
+#weather #wimage{
+    width : 30%;
+    height : 50vh;
+    margin-top : 80px;
+    /* border : 2px solid blue; */
+    margin-right : 80px;
+    float: right;}
+
+    #weather #wimage img{ 
+     width : 100%;
+     height : 100%;
+    
+}
+#wishlist{
+    width : 100%;
+    height : 70vh;
+    /* border : 2px solid red; */
+}
+#wishlist p{
+    
+    width : 550px;
+    height : 50vh;
+    float:right;
+    margin-right : 250px;
+    margin-top : 100px;
+    color:rgb(110, 118, 117);
+    font-size :20px;
+    line-height: 40px;
+}
+#wishlist h6{
+    font-size : 40px;
+
+}
+#wishlist #listdreams{
+ position:relative;
+ border:8px solid #74BEB3;
+ width: 50vh;
+ height:55vh;
+ transform:rotate(-15deg);
+ top:30px;
+ left:100px;
+ border-radius: 5px;
+}
+#wishlist #listdreams ul{
+    list-style: none;
+    padding : 7px;
+   
+}
+#wishlist #listdreams ul li{
+    margin-right : 150px;
+    padding : 4px;
+    font-size : 22px;
+    color:rgb(34, 29, 29);
+    transform:rotate(5deg);
+
+
+}
+#footer{
+    width : 90%;
+    height : 50vh;
+    float : right;
+    background-color: #68caba;
+    margin-top : 60px;
+    display : flex;
+   
+}
+#footer  #footerimg{
+    width : 20%;
+    height : 55vh;
+  
+    margin-top : -50px;
+    margin-left: -50px;
+    background: url('https://youthincmag.com/wp-content/uploads/2018/09/Travel-And-Tourism-Sector.jpg') no-repeat center/cover;
+   
+
+}
+#footer #footertext{
+    width : 70%;
+    height : 50vh;
+    
+    float : right;
+    margin-left : 25vh; 
+}
+#footer #footertext input{
+    width : 60%;
+    height : 4vh;
+    margin-top : 30px;
+    border-radius: 20px;
+    border: 1px solid white;
+    margin-left: -200px;
+}
+#footer #footertext input::placeholder{
+    margin-left: 8px;
+}
+#footer #footertext button{
+    width : 30%;
+    height : 5vh;
+    border-radius: 20px;
+    border: 1px solid rgb(131, 142, 144);
+    background-color: rgb(131, 142, 144);
+    margin-left : -150px;
+    cursor:pointer;
+}
+#footer #footertext #footerlinks{
+    width : 100%;
+    height : 22vh;
+    margin-top : 25px;
+    
+    display:flex;
+    justify-content: space-evenly;
+}
+#footer #footertext #footerlinks h5 {
+    color : white;
+    font-size: 20px;
+    cursor:pointer;
+    margin-left:-250px;
+}
+
+#footer #footertext #footerlinks h5 ul {
+    list-style: none;
+    margin-left : 0px;
+    font-size : 10px;
+    color :rgb(88, 120, 125);
+    font-size:14px;
+    cursor:pointer;
+    margin-top:5px;
+    line-height: 20px;
+}
+#footer #footertext hr{
+    margin-top: 40px;
+    border:1px solid rgb(131, 142, 144);
+    width : 80%;
+}
+
+#footer #footertext #footersocial
+{
+    display : flex;
+    justify-content: flex-end;
+    margin-right : 200px;
+}
+#footer #footertext #footersocial p{
+    margin-right : 220px;
+    color:white;
+    margin-top : 15px;
+    font-family: 'Nunito', sans-serif;
+}
+#footer #footertext #footersocial i{
+    margin-left : 40px;
+    font-size: 20px;
+    margin-top : 18px;
+    color:white;
+}
+a{
+    color:black;
+}
